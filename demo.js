@@ -104,3 +104,21 @@ function animate(btnList, speed ){
 }
 moveCursor({x:0, y:0});
 
+function consoleWelcomeMessage(){
+    const CODE = "font-family: 'Courier New', monospace; ";
+console.log(`%cWelcome to the JSFuck Keyboard demo
+%cThanks for checking out my dumb little project.
+
+Some useful commands:`, "font-size:25px","");
+console.log(`%ckeyboard.attachInput(textInput)
+    textInput%c - The HTML input element to attach the keyboard to 
+Forcefully open and attach the keyboard to a HTML text input. Example: 
+%ckeyboard.attachInput(document.querySelector("#textField")); //Attach the keyboard to the first text input`, CODE, "", CODE);
+console.log(`%canimate(buttonStr, speed)
+    buttonStr%c - A string containing a list of buttons to be preesed. Use "e" and "c" to represent enter and clear respectively.
+    %cspeed%c - The speed in pixels per frame for the cursor to move at
+Automatically type a given sequence of buttons. Example: 
+%canimate("(!![]+[])[+!+[]]e", 30) //Type the letter "r"`,CODE, "", CODE, "", CODE);
+}
+consoleWelcomeMessage();
+
