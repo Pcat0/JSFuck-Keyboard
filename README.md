@@ -1,2 +1,2 @@
 # JSFuck-Keyboard
-A really really bad onscreen keyboard made for r/badUIbattles
+A really really bad on screen keyboard made for r/badUIbattles
