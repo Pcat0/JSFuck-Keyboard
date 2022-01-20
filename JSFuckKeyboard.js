@@ -126,7 +126,7 @@ class JSFuckKeyboard {
             let result = eval(this.currentInput);
             let firstChar = (result + "")[0] ?? "";
             this.attachedInput.value += firstChar;
-            console.log(result, firstChar, this.currentInput);
+            //console.log(result, firstChar, this.currentInput);
         } catch(e) {
             console.log(e);
         }
